@@ -4799,19 +4799,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </script>
     <script type="text/javascript" gwd-events="handlers">
       gwd.auto_Gwd_taparea_1Action = function (event) {
-        let options = {
-            method: 'GET',
-            headers: {
-                'Response-Type': 
-                    'application/json'
-            }
-        }
-        let response = fetch(`https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc`, options)
-        .then(res =>
-            res.json()).then(d => {
-                console.log(d)
-            })
-        .catch(err => console.log(err))
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('delhi-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('delhi-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_1",
@@ -4822,6 +4822,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_2Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.4595&lon=77.0266&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('gurg-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('gurg-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_2",
@@ -4832,6 +4845,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_3Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.5355&lon=77.3910&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('noida-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('noida-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_3",
@@ -4852,6 +4878,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_5Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('delhi-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('delhi-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_1",
@@ -4862,6 +4901,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_6Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.4595&lon=77.0266&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('noida-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('noida-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_3",
@@ -4872,6 +4924,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_7Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('delhi-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('delhi-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_1",
@@ -4882,6 +4947,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         );
       };
       gwd.auto_Gwd_taparea_8Action = function (event) {
+        fetch(
+          "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.4595&lon=77.0266&appid=22f760a45156cddca51d44606880edfc"
+        )
+          .then(function (resp) {
+            return resp.json();
+          }) // Convert data to json
+          .then(function (data) {
+            document.getElementById('gurg-1').innerHTML = data.list[0].components.pm2_5;
+            document.getElementById('gurg-2').innerHTML = data.list[0].components.pm10;
+          })
+          .catch(function () {
+            // catch any errors
+          });
         gwd.actions.gwdPagedeck.goToPage(
           "pagedeck",
           "page1_2",
@@ -5606,8 +5684,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               id="gwd-taparea_3"
               class="gwd-taparea-1r7l"
             ></gwd-taparea
-            ><span class="gwd-span-1bpt">2.5</span
-            ><span class="gwd-span-dwdj">4.5</span
+            ><span class="gwd-span-1bpt" id="delhi-1"></span
+            ><span class="gwd-span-dwdj" id="delhi-2"></span
             ><span class="gwd-span-mu2v gwd-span-nr2a">VERY POOR</span>
             <gwd-image
               id="swipe__left_to_boost_immunity"
@@ -5641,8 +5719,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               scaling="stretch"
               class="gwd-image-luje"
             ></gwd-image>
-            <span class="gwd-span-1bpt">2.5</span
-            ><span class="gwd-span-dwdj">4.5</span
+            <span class="gwd-span-1bpt" id="gurg-1"></span
+            ><span class="gwd-span-dwdj" id="gurg-2"></span
             ><span class="gwd-span-mu2v">VERY POOR</span>
             <gwd-taparea
               id="gwd-taparea_5"
@@ -5684,8 +5762,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               scaling="stretch"
               class="gwd-image-bn74"
             ></gwd-image>
-            <span class="gwd-span-1bpt">2.5</span
-            ><span class="gwd-span-dwdj">4.5</span
+            <span class="gwd-span-1bpt" id="noida-1"></span
+            ><span class="gwd-span-dwdj" id="noida-2"></span
             ><span class="gwd-span-mu2v">VERY POOR</span>
             <gwd-taparea
               id="gwd-taparea_7"
