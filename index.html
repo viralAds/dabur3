@@ -4806,7 +4806,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     'application/json'
             }
         }
-        let response = fetch(`http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc`, options)
+        let response = fetch(`https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=28.7041&lon=77.1025&appid=22f760a45156cddca51d44606880edfc`, options)
         .then(res =>
             res.json()).then(d => {
                 console.log(d)
